@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'PayPal Open';
+    src: url('PayPalOpen-Italic.eot');
+    src: local('PayPal Open Italic'), local('PayPalOpen-Italic'),
+        url('PayPalOpen-Italic.eot?#iefix') format('embedded-opentype'),
+        url('PayPalOpen-Italic.woff2') format('woff2'),
+        url('PayPalOpen-Italic.woff') format('woff'),
+        url('PayPalOpen-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PayPal Open';
+    src: url('PayPalOpen-BoldItalic.eot');
+    src: local('PayPal Open Bold Italic'), local('PayPalOpen-BoldItalic'),
+        url('PayPalOpen-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('PayPalOpen-BoldItalic.woff2') format('woff2'),
+        url('PayPalOpen-BoldItalic.woff') format('woff'),
+        url('PayPalOpen-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PayPal Open';
+    src: url('PayPalOpen-Bold.eot');
+    src: local('PayPal Open Bold'), local('PayPalOpen-Bold'),
+        url('PayPalOpen-Bold.eot?#iefix') format('embedded-opentype'),
+        url('PayPalOpen-Bold.woff2') format('woff2'),
+        url('PayPalOpen-Bold.woff') format('woff'),
+        url('PayPalOpen-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PayPal Open';
+    src: url('PayPalOpen-Light.eot');
+    src: local('PayPal Open Light'), local('PayPalOpen-Light'),
+        url('PayPalOpen-Light.eot?#iefix') format('embedded-opentype'),
+        url('PayPalOpen-Light.woff2') format('woff2'),
+        url('PayPalOpen-Light.woff') format('woff'),
+        url('PayPalOpen-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PayPal Open';
+    src: url('PayPalOpen-Medium.eot');
+    src: local('PayPal Open Medium'), local('PayPalOpen-Medium'),
+        url('PayPalOpen-Medium.eot?#iefix') format('embedded-opentype'),
+        url('PayPalOpen-Medium.woff2') format('woff2'),
+        url('PayPalOpen-Medium.woff') format('woff'),
+        url('PayPalOpen-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PayPal Open';
+    src: url('PayPalOpen-LightItalic.eot');
+    src: local('PayPal Open Light Italic'), local('PayPalOpen-LightItalic'),
+        url('PayPalOpen-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('PayPalOpen-LightItalic.woff2') format('woff2'),
+        url('PayPalOpen-LightItalic.woff') format('woff'),
+        url('PayPalOpen-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PayPal Open';
+    src: url('PayPalOpen-Regular.eot');
+    src: local('PayPal Open'), local('PayPalOpen-Regular'),
+        url('PayPalOpen-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PayPalOpen-Regular.woff2') format('woff2'),
+        url('PayPalOpen-Regular.woff') format('woff'),
+        url('PayPalOpen-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PayPal Open';
+    src: url('PayPalOpen-MediumItalic.eot');
+    src: local('PayPal Open Medium Italic'), local('PayPalOpen-MediumItalic'),
+        url('PayPalOpen-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('PayPalOpen-MediumItalic.woff2') format('woff2'),
+        url('PayPalOpen-MediumItalic.woff') format('woff'),
+        url('PayPalOpen-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+

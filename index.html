@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal: Summary</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
+</head>
+<body>
+	<div id="loading-overlay">
+		<img src="img/loading.png" id="loading-img">
+	</div>
+	
+	<!-- Barra superiore (simile all'immagine) -->
+	<div class="top-bar">
+		<div class="sx">
+			<img src="img/logo.png">
+			<a href="index.html" class="active">Home</a>
+			<a href="invia.html">Send and Request</a>
+			<a href="#">Wallet</a>
+			<a href="#">Activity</a>
+			<a href="#">Help</a>
+		</div>
+		<div class="dx">
+			<img src="img/notif.png">
+			<img src="img/settings.png">
+			<a> LOG OUT </a>
+		</div>
+	</div>
+
+	<!-- Sezione saldo -->
+	<div class="both">
+		<div class="bsx">
+			<div class="square">
+				<h3>PayPal balance</h3>
+				<h1 id="balance">4</h1>
+				<p>Available</p>
+				<a href="invia.html" class="but">Transfer Money</a>
+			</div>
+
+			<!-- Attività recenti -->
+			<div class="square" id="ps">
+				<h3>Recent activity</h3>
+			</div>
+		</div>
+			<div class="bdx">
+				<img src="img/habibi.png">
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<img src="img/footer.png">
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>

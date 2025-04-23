@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal: Send Money</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
+</head>
+<body>
+    <div id="loading-overlays">
+		<img src="img/loading.png" id="loadings-img">
+	</div>
+    <img id="fullscreen-image" src="img/payment.png" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; object-fit:cover; z-index:9999;">
+    <!-- Barra identica alla home -->
+    <div class="top-bar">
+        <div class="sx">
+            <img src="img/logo.png">
+            <a href="index.html">Home</a>
+            <a href="invia.html" class="active">Send and Request</a>
+            <a href="#">Wallet</a>
+            <a href="#">Activity</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="dx">
+            <img src="img/notif.png">
+            <img src="img/settings.png">
+            <a> LOG OUT </a>
+        </div>
+    </div>
+    <div id="invis">
+        <div class="square" id="square-i">
+            <div class="profils">
+                <img src="img/profilo.png">
+                <h3><input type="text" id="name" autocomplete="off" placeholder="@username" autofocus></h3>
+            </div>
+            <h1>
+                <div class="input-container">
+                    <span class="currency">€</span>
+                    <input type="text" id="euro" autocomplete="off" placeholder="0,00">
+                    <img src="img/eur.png">
+                </div>
+            </h1>
+            <div class="square" id="comm">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" data-ppui="true" id="bubble"><path d="M20.25 4.5H3.75A1.5 1.5 0 0 0 2.25 6v15a1.486 1.486 0 0 0 .866 1.36 1.49 1.49 0 0 0 1.595-.214l.008-.007L7.781 19.5H20.25a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5zm0 13.5H7.5a.75.75 0 0 0-.49.183L3.75 21V6h16.5v12zm-12-7.5A.75.75 0 0 1 9 9.75h6a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75zm0 3a.75.75 0 0 1 .75-.75h6a.75.75 0 1 1 0 1.5H9a.75.75 0 0 1-.75-.75z" data-ppui="true"></path></svg>
+                <p><input type="text" id="comment" autocomplete="off" placeholder="What's this for?"></p>
+            </div>
+        </div>
+        <p>For more information please read our <span id="links">user agreement</span>.</p>
+        <div id="button-row">
+            <button>Request</button>
+            <button id="sends" onclick="mostraImmagine();">Send</button>
+        </div>
+    </div>
+    <footer>
+		<img src="img/footer2.png">
+	</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

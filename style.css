@@ -1,0 +1,496 @@
+/* Reset e stili base */
+
+@font-face {
+    font-family: 'PayPalOpen-Regular';
+    src: url('font/PayPalOpen-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PayPalOpen-Light';
+    src: url('font/PayPalOpen-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PayPalOpen-Bold';
+    src: url('font/PayPalOpen-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'EX';
+    src: url('font/extra.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PayPalOpen-Regular";
+}
+
+body {
+    background-color: #faf8f5;
+    color: #000;
+    
+}
+
+#loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 1s ease, pointer-events 0s 1s;
+}
+
+#loading-img {
+    width: 100px;
+    animation: spin 1s infinite linear;
+}
+
+#loading-overlays { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none; /* Cambiato da auto a none */
+    transition: opacity 1s ease;
+    z-index: 9999;
+}
+
+#loadings-img {
+    width: 100px;
+    animation: spin 1s infinite linear;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+#invis {
+    background-color: #ffffff;
+}
+
+img {
+    user-select: none; /* Disabilita la selezione delle immagini */
+    -webkit-user-drag: none; /* Disabilita il trascinamento delle immagini in Safari */
+}
+
+/* Barra superiore */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 23px;
+    padding-bottom: 22px;
+    padding-left: 21%;
+    padding-right: 21%;
+	background-color: #142c8e;
+	color: #d1f1ff;
+}
+
+.sx {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+.sx img {
+    height: 27px;
+    cursor: pointer;
+}
+
+.sx a {
+    text-decoration: none;
+	border: 1px solid #142c8e;
+    color: #d1f1ff;
+    font-size: 16px;
+    border-radius: 30px;
+	padding:17px;
+	margin-right:-10px;
+	padding-bottom:14px;
+	transition: all 0.5s ease;
+}
+
+.sx a:hover {
+	border: 1px solid #435db5;
+}
+
+.sx a.active {
+	background-color: #27419a;
+	color: #fff;
+}
+
+.sx a.active:hover {
+	border: 1px solid #142c8e;
+}
+
+.dx {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.dx img {
+    height: 20px;
+    cursor: pointer;
+}
+
+.dx a {
+    text-decoration: none;
+    color: #d1f1ff;
+    font-size: 14px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.both {
+    display: flex;
+}
+
+.bsx {
+	padding-top: 30px;
+	padding-left: 22.5%;
+    width: 55%;
+}
+
+.bdx {
+    width: 45%;
+	padding-top: 30px;
+	padding-right: 22%;
+	background-color: #ffffff;
+}
+
+
+.square {
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    padding: 25px;
+    border-radius: 15px;
+	color: #001435;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+.square:hover {
+	cursor: pointer;
+}
+
+.square h3 {
+	font-family: PayPalOpen-Bold;
+    font-size: 18px;
+    color: #001435;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.square h1 {
+	font-family: PayPalOpen-Light;
+    font-size: 42px;
+    font-weight: 600;
+	padding-top: 20px;
+	padding-bottom: 10px;
+    color: #001435;
+}
+
+.square p {
+	font-family: PayPalOpen-Light;
+	font-weight: 400;
+    font-size: 14px;
+    color: #001435;
+    margin-bottom: 20px;
+}
+
+.square .but {
+    font-family: "PayPalOpen-Bold";
+    display: inline-block;
+    background-color: #003087;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: -5px;
+	transition: all 0.2s ease;
+}
+
+.square .but:hover {
+	background-color: #0070e0;
+}
+
+
+/* Attività recenti */
+#ps {
+    border: 1px solid #fff;
+    padding: 18px;
+}
+
+#ps:hover {
+    cursor:default;
+}
+
+#ps h3 {
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+#pp {
+    display: flex;
+    justify-content: space-between;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:23px;
+    padding-bottom:27px;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+#pp:hover {
+    box-shadow: 0 0 10px rgba(229, 229, 229, 0.7);
+}
+
+.prof {
+    display: flex;
+    margin-bottom: -20px;
+    width: 280px;
+}
+
+.prof img {
+    height:50px;
+    margin-right: 20px;
+}
+
+#pp h3 {
+    margin-top:7px;
+    margin-bottom:6px;
+}
+
+.profile-pic {
+    height:50px;
+    width:50px;
+    margin-right: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "PayPalOpen-Light";
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+/* General styles */
+#invis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#square-i {
+    width: 28.5%;
+    height: 280px;
+    margin-top: 40px;
+    flex: center;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    margin-bottom: 30px;
+}
+
+#square-i:hover {
+    cursor: default;
+}
+
+/* Profile section */
+.profils {
+    display: flex;
+    float: center;
+    align-items: center;
+    width: 100%;
+}
+
+.profils img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+
+/* Input fields */
+input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+    width: 100%;
+    font-size: inherit;
+    color: inherit;
+    background: transparent;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-bottom-color: #007AFF;
+}
+
+#name {
+    font-size: 28px;
+    font-family: "PayPalOpen-Bold";
+    font-weight: 1000;
+    width: 116%;
+    padding-top: 20px;
+    border-bottom: #fff;
+    color: black;
+}
+
+#name::placeholder {
+    color: #b8b8b8;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: -6px;
+}
+
+.input-container img {
+    width: auto;
+    height: 33px;
+}
+
+.currency {
+    position: absolute;
+    left: 5px; /* Regola la distanza dal bordo */
+    top: 50%;
+    transform: translateY(-52%);
+    font-size: 40px;
+    color: #2e2e2e; /* Stesso colore del placeholder */
+    font-weight: normal;
+}
+
+.currency:hover {
+    cursor:text;
+}
+
+#euro {
+    font-size: 40px;
+    font-weight: normal;
+    border: none; /* Se vuoi rimuovere il bordo */
+    padding-left: 30px; /* Spazio per il simbolo € */
+    color: #2e2e2e;
+}
+
+#euro::placeholder {
+    color: #2e2e2e;
+}
+
+
+#comm {
+    border: 1px solid #d1d1d1;
+    border-radius: 7px;
+    height: 20px;
+    display:flex;
+    padding:30px;
+    padding-left: 10px;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+#comm:hover {
+    cursor: default;
+}
+
+#bubble {
+    width: 30px;
+    color: #696969;
+}
+
+#comment {
+    font-size: 14px;
+    border-bottom: #fff;
+    position: absolute;
+    max-width: 19%;
+}
+
+#invis p {
+    font-family: "PayPalOpen-Light";
+    font-size: 12px;
+}
+
+#links {
+    color: #007AFF;
+    cursor: pointer;
+}
+
+/* Buttons */
+#button-row {
+    
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 18%;
+    height: 47px;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+#button-row button {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.2s ease;
+
+}
+
+#button-row button:hover {
+    background-color: #333333;
+}
+
+
+#button-row a{
+    color: white;
+    text-decoration: none;
+}
+
+#fullscreen-img {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9) center/contain no-repeat;
+}

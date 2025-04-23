@@ -1,0 +1,65 @@
+body {
+  background: white;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: right;
+}
+
+.display {
+  font-size: 60px;
+  color: #555c6d;
+  background: #f5f6f8;
+  border: 2px solid #c2c6d3;
+  border-radius: 10px;
+  padding: 40px 0;
+  margin-bottom: 15px;
+  width: 323px;
+  text-align: center;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+input, button {
+  font-size: 32px;
+  padding: 10px 20px;
+  background: #f5f6f8;
+  border: 2px solid #c2c6d3;
+  border-radius: 10px;
+  color: #555c6d;
+  width: 80px;
+  text-align: right;
+}
+
+/* Rimuove le freccette su Chrome, Safari, Edge */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Rimuove le freccette su Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button {
+  width: 60px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(225,227,235);
+}
